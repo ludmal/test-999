@@ -67,13 +67,13 @@ const CONFIG = {
         const response = await fetch('https://api.openai.com/v1/chatkit/sessions', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer ${CONFIG.OPENAI_API_KEY}`,
+            'Authorization': `Bearer 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`,
             'Content-Type': 'application/json',
             'OpenAI-Beta': 'chatkit_beta=v1'
           },
           body: JSON.stringify({
             workflow: {
-              id: CONFIG.WORKFLOW_ID
+              id: 'wf_68e627beb3008190ae5204d8ab71c16c0c33a45c233669ed'
             },
             user: `user_${Date.now()}`
           })
